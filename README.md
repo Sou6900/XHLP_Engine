@@ -67,10 +67,10 @@ The project is structured into modular components to ensure separation of concer
 
 ## Tests & Accuracy
 
-**Pass Rate:** **98%+**
+**Pass Rate:** **95%+**
 Tested against **300+ complex Android XML layouts**, including deeply nested `ConstraintLayout`s, RTL/LTR combinations, barriers, chains, flows, and edge-case constraint interactions.
 
-**Accuracy:** **95% – 99% overall**
+**Accuracy:** **90% – 95% overall**
 Accuracy is measured by comparing computed view geometry 
 
 Remember This Engine not Always correct but maximum time perfect preview
