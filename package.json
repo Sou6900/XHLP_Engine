@@ -1,0 +1,44 @@
+{
+  "name": "acode-plugin-modded",
+  "version": "1.0.0",
+  "description": "Debug with color , build with compressed",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "node .devServer/start-dev",
+    "build": "webpack && node .devServer/pack-zip.js",
+    "build-release": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sou6900/Acode_Template.git"
+  },
+  "author": "Sourav Chand",
+  "license": "MIT",
+  "bugs": {
+    "url": "null"
+  },
+  "homepage": "https://github.com/Sou6900/Acode_Template/blob/main/readme.md",
+  "dependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@types/ace": "^0.0.50",
+    "@wasm-fmt/clang-format": "^21.1.8",
+    "babel-loader": "^9.1.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.4",
+    "html-tag-js": "^2.0.4",
+    "html2canvas": "^1.4.1",
+    "ip": "^2.0.1",
+    "jszip": "^3.10.1",
+    "live-server": "^1.2.2",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^13.0.1"
+  }
+}

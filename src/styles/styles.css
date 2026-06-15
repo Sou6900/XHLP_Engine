@@ -1,0 +1,228 @@
+  .open-file-list li.tile .file, .open-file-list li.tile .aid-builder-icon{
+     background-size: 13px;
+  }
+  
+  .open-file-list li.tile .file, .open-file-list li.tile .aid-feature-icon{
+     background-size: 13px;
+  }
+  
+  .open-file-list li.tile .file, .open-file-list li.tile .aid-camera-icon{
+     background-size: 13px;
+  }
+  
+  .open-file-list li.tile .file, .open-file-list li.tile .aid-gradle-icon{
+     background-size: 13px;
+  }
+  
+  
+  .open-file-list li.tile .file, .open-file-list li.tile .aid-xhlp-icon{
+     background-size: 13px;
+  }
+  
+  
+  
+  
+
+  
+  .andro-modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    backdrop-filter: blur(0.1px);
+}
+.andro-modal-overlay.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.andro-modal-box {
+    background: var(--secondary-color);
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+.andro-modal-overlay.visible .andro-modal-box {
+    transform: translateY(0);
+}
+.andro-modal-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.andro-modal-title {
+    font-weight: bold;
+    color: var(--primary-text-color);
+}
+.andro-modal-close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #25943e;
+}
+.andro-modal-close:hover { color: #c31b1b; }
+.andro-modal-body {
+    padding: 15px;
+    color: var(--primary-text-color);
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.andro-modal-footer {
+    padding: 10px 15px;
+    border-top: 1px solid var(--border-color) ;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.andro-modal-btn {
+    padding: 6px 16px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.andro-modal-btn.secondary {
+    background: transparent;
+    color: var(--secondary-text-color);
+    border: 1px solid var(--border-color);
+}
+.andro-modal-btn.secondary:hover { border-color: #888; color: var(--secondary-text-color);}
+.andro-modal-btn.primary {
+    background: #4caf50;
+    color: white;
+}
+.andro-modal-btn.primary:hover { background: #43a047; }
+
+
+
+
+
+
+
+
+
+
+/* Comp Row Layout */
+.comp-row-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+.comp-row {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Version Button */
+.version-btn {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border-color);
+    color: #4caf50;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+.version-btn:hover {
+    background: rgba(76, 175, 80, 0.1);
+    border-color: #4caf50;
+}
+
+/* Dropdown Menu */
+.andro-dropdown-menu {
+    position: fixed;
+    background: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 9999;
+    min-width: 120px;
+    overflow: hidden;
+    animation: fadeIn 0.1s ease;
+}
+.andro-dropdown-item {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    color: #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.andro-dropdown-item:hover {
+    background: #094771;
+    color: #fff;
+}
+.badge-def {
+    font-size: 0.65rem;
+    background: #333;
+    padding: 1px 4px;
+    border-radius: 2px;
+    opacity: 0.7;
+}
+.andro-dropdown-divider {
+    height: 1px;
+    background: #333;
+    margin: 4px 0;
+}
+.andro-dropdown-input-row {
+    padding: 8px;
+    display: flex;
+    gap: 5px;
+}
+.andro-dropdown-custom-input {
+  width: 70px;
+  background: var(--primary-color);
+  border: 1px solid rgb(68, 68, 68);
+  color: var(--primary-text-color);
+  font-size: 0.8rem;
+  padding: 0;
+  border-radius: 1px;
+  height: 20px;
+}
+.andro-dropdown-add-btn {
+    background: #4caf50;
+    color: white;
+    border: none;
+    font-size: 0.75rem;
+    padding: 0 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+  #aid-btn-menu{
+  border:none; background:transparent; cursor:pointer; padding:6px; border-radius:4px; display:flex; align-items:center; justify-content:center; color:inherit;
+  }
+  
+  #aid-toolbar-menu{
+  padding: 8px 12px; border-bottom: 1px solid #eee; font-size: 11px; color: #888; font-weight: 600; text-transform: uppercase;
+  }
+  #aid-toolbar-menu .menu-item{
+  padding: 8px 12px; cursor: pointer; font-size: 13px; display: flex; align-items: center; gap: 8px;
+  }
